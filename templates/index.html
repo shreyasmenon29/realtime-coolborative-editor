@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Google Docs</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Login check -->
+    <script>
+        const username = localStorage.getItem("username");
+        if (!username) {
+            window.location.href = "/login";
+        }
+    </script>
+
+    <div class="container">
+        <h2>Real-Time Collaborative Editor</h2>
+
+        <p id="users">
+            <span class="status-dot"></span>
+            Users online: 0
+        </p>
+
+        <div id="editor-wrapper">
+            <div class="page">
+                <div class="page-number">Page 1</div>
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

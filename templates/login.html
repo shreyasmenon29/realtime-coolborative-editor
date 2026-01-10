@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <p>Enter your name to access the editor</p>
+
+        <input id="username" type="text" placeholder="Your name">
+        <button onclick="enterEditor()">Enter Editor</button>
+    </div>
+
+    <script>
+        function enterEditor() {
+            const name = document.getElementById("username").value.trim();
+            if (!name) {
+                alert("Please enter a name");
+                return;
+            }
+            localStorage.setItem("username", name);
+            window.location.href = "/";
+        }
+    </script>
+
+</body>
+</html>

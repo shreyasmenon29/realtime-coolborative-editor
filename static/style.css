@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Users online text */
+#users {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Green online dot */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Wrapper holding pages */
+#editor-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Individual page */
+.page {
+    background: white;
+    padding: 50px 40px 40px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Page number */
+.page-number {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Text area styled like a document */
+.page textarea {
+    width: 100%;
+    height: 700px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 1.6;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+/* Focus effect */
+.page textarea:focus {
+    background-color: #fcfcfc;
+}
+
+/* ---------------- LOGIN PAGE STYLES ---------------- */
+
+.login-container {
+    max-width: 400px;
+    margin: 120px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-top: 0;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor:
